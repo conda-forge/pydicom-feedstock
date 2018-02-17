@@ -1,17 +1,20 @@
-{% set version = "0.9.9" %}
+{% set name = "pydicom" %}
+{% set version = "v0.9.9.post1" %}
+{% set sha256 = "4dcdc1a99fd52c6329b918d36b5919407b7de0bd13e039b64a32396b8147e3c6" %}
 
 package:
-  name: pydicom
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: pydicom-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/source/p/pydicom/pydicom-{{ version }}.tar.gz
-  md5: a66ca6728e69ba565ab9c8a21740eee8
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://github.com/pydicom/{{ name }}/archive/{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
@@ -19,17 +22,33 @@ requirements:
     - setuptools
   run:
     - python
-    - numpy
 
 test:
   imports:
-    - dicom
+    - pydicom
 
 about:
-  home: http://pydicom.readthedocs.org/
+  home: http://github.com/pydicom/pydicom
   license: MIT
-  summary: Pure python package for DICOM medical file reading and writing
+  license_family: MIT
+  license_file: LICENSE
+  summary: 'Pure python package for DICOM medical file reading and writing'
+  description: |
+    pydicom is a pure python package for parsing DICOM files. DICOM is a
+    standard (http://medical.nema.org) for communicating medical images and
+    related information such as reports and radiotherapy objects.  pydicom
+    makes it easy to read these complex files into natural pythonic structures
+    for easy manipulation. Modified datasets can be written again to DICOM
+    format files. See the `Getting Started
+    <https://pydicom.giathub.io/pydicom/stable/getting_started.html>`_ page for
+    installation and basic information, and the `Pydicom User Guide
+    <https://pydicom.giathub.io/pydicom/stable/getting_started.html>`_ page for
+    an overview of how to use the pydicom library.
+  doc_url: https://pydicom.giathub.io/pydicom
+  dev_url: https://github.com/pydicom/pydicom
 
 extra:
   recipe-maintainers:
+    - glemaitre
+    - darcymason
     - arokem
