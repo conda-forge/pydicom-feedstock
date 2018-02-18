@@ -1,7 +1,7 @@
 About pydicom
 =============
 
-Home: http://pydicom.readthedocs.org/
+Home: http://pydicom.github.io/pydicom
 
 Package license: MIT
 
