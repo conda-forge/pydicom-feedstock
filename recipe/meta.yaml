@@ -1,5 +1,5 @@
 {% set name = "pydicom" %}
-{% set version = "v1.0.1" %}
+{% set version = "1.0.1" %}
 {% set sha256 = "173e4de4488d042f729f3c379906e63579d3c5d48337a559438ab1ee4e3313fb" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/pydicom/{{ name }}/archive/{{ version }}.tar.gz
+  url: https://github.com/pydicom/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -53,5 +53,3 @@ extra:
     - glemaitre
     - darcymason
     - arokem
-    - glemaitre
-    - darcymason
