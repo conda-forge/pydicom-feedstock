@@ -1,7 +1,7 @@
 About pydicom
 =============
 
-Home: http://pydicom.readthedocs.org/
+Home: http://github.com/pydicom/pydicom
 
 Package license: MIT
 
@@ -9,14 +9,22 @@ Feedstock license: BSD 3-Clause
 
 Summary: Pure python package for DICOM medical file reading and writing
 
+pydicom is a pure python package for parsing DICOM files. DICOM is a
+standard (http://medical.nema.org) for communicating medical images and
+related information such as reports and radiotherapy objects.  pydicom
+makes it easy to read these complex files into natural pythonic structures
+for easy manipulation. Modified datasets can be written again to DICOM
+format files. See the `Getting Started
+<https://pydicom.giathub.io/pydicom/stable/getting_started.html>`_ page for
+installation and basic information, and the `Pydicom User Guide
+<https://pydicom.giathub.io/pydicom/stable/getting_started.html>`_ page for
+an overview of how to use the pydicom library.
 
 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pydicom-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pydicom-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pydicom-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pydicom-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pydicom-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pydicom-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pydicom-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pydicom-feedstock)
 
 Current release info
 ====================
@@ -66,6 +74,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
