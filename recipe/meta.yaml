@@ -1,6 +1,6 @@
 {% set name = "pydicom" %}
-{% set version = "1.0.1" %}
-{% set sha256 = "173e4de4488d042f729f3c379906e63579d3c5d48337a559438ab1ee4e3313fb" %}
+{% set version = "1.0.2" %}
+{% set sha256 = "4da94c357b4dea75a9fadcd2dad8eddb3c87c8b9d71b9cd202ffefc2b7b64217" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
