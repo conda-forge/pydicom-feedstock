@@ -24,12 +24,15 @@ an overview of how to use the pydicom library.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pydicom-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pydicom-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pydicom-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pydicom-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pydicom/badges/version.svg)](https://anaconda.org/conda-forge/pydicom)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pydicom/badges/downloads.svg)](https://anaconda.org/conda-forge/pydicom)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pydicom-green.svg)](https://anaconda.org/conda-forge/pydicom) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pydicom.svg)](https://anaconda.org/conda-forge/pydicom) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pydicom.svg)](https://anaconda.org/conda-forge/pydicom) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pydicom.svg)](https://anaconda.org/conda-forge/pydicom) |
 
 Installing pydicom
 ==================
