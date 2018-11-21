@@ -45,7 +45,7 @@ about:
     installation and basic information, and the `Pydicom User Guide
     <https://pydicom.giathub.io/pydicom/stable/getting_started.html>`_ page for
     an overview of how to use the pydicom library.
-  doc_url: https://pydicom.giathub.io/pydicom
+  doc_url: https://pydicom.github.io/pydicom
   dev_url: https://github.com/pydicom/pydicom
 
 extra:
