@@ -1,6 +1,6 @@
 {% set name = "pydicom" %}
-{% set version = "1.4.2" %}
-{% set sha256 = "54bea8c1bb4a74dd61e8470d30ec39c198471b675afb305c8bc1b1a387fbac8a" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "dc11bc6ae2cf5ff15a548bd5bc7ac1e4e56ea8741ae6f6dc3dd156709900f62e" %}
 
 package:
   name: {{ name|lower }}
@@ -33,7 +33,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Pure python package for DICOM medical file reading and writing'
+  summary: Pure python package for DICOM medical file reading and writing
   description: |
     pydicom is a pure python package for parsing DICOM files. DICOM is a
     standard (http://medical.nema.org) for communicating medical images and
