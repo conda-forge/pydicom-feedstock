@@ -5,9 +5,13 @@ Home: http://github.com/pydicom/pydicom
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydicom-feedstock/blob/master/LICENSE.txt)
 
 Summary: Pure python package for DICOM medical file reading and writing
+
+Development: https://github.com/pydicom/pydicom
+
+Documentation: https://pydicom.github.io/pydicom
 
 pydicom is a pure python package for parsing DICOM files. DICOM is a
 standard (http://medical.nema.org) for communicating medical images and
