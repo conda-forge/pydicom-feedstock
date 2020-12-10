@@ -1,6 +1,6 @@
 {% set name = "pydicom" %}
-{% set version = "2.1.0" %}
-{% set sha256 = "5cd152162ad0105e44e95032be22f643832b2c0d8ede5e102c9fe6c194d77f04" %}
+{% set version = "2.1.2" %}
+{% set sha256 = "e7cfbc4a997e327583bee047b7c9340845328373d088e776cf9565e47609a1a3" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - setuptools
