@@ -18,17 +18,18 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.7
     - pip
-    - setuptools
+    - flit-core
+
   run:
-    - python
+    - python >=3.7
 
 test:
   imports:
     - pydicom
   requires:
-    - setuptools
+    - flit-core
 
 about:
   home: http://github.com/pydicom/pydicom
