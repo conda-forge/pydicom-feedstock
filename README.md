@@ -1,11 +1,11 @@
-About pydicom
-=============
+About pydicom-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydicom-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/pydicom/pydicom
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydicom-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pure python package for DICOM medical file reading and writing
 

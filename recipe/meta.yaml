@@ -1,6 +1,6 @@
 {% set name = "pydicom" %}
-{% set version = "2.3.1" %}
-{% set sha256 = "ee526d776371dd4373f93d300f9c755356c6353da6fbd89955c786037d0c97b5" %}
+{% set version = "2.4.0" %}
+{% set sha256 = "70958241407d9654f3ab9cf20036c15bb63e0fe63f246dc4ae9fd5d88214a7a1" %}
 
 package:
   name: {{ name|lower }}
@@ -18,17 +18,18 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.7
     - pip
-    - setuptools
+    - flit-core
+
   run:
-    - python
+    - python >=3.7
 
 test:
   imports:
     - pydicom
   requires:
-    - setuptools
+    - flit-core
 
 about:
   home: http://github.com/pydicom/pydicom
