@@ -1,6 +1,6 @@
 {% set name = "pydicom" %}
-{% set version = "3.0.0" %}
-{% set sha256 = "0d21b27ea0110190725ee7cf2ddc29de633e230518b6f859025c1bb063df1b21" %}
+{% set version = "3.0.1" %}
+{% set sha256 = "848ae8e36f34750cf837e48ca5cdf6f7a472145724946d5f28f529279fe11f4e" %}
 
 package:
   name: {{ name|lower }}
