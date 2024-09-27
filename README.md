@@ -160,4 +160,6 @@ Feedstock Maintainers
 * [@arokem](https://github.com/arokem/)
 * [@darcymason](https://github.com/darcymason/)
 * [@glemaitre](https://github.com/glemaitre/)
+* [@mrbean-bremen](https://github.com/mrbean-bremen/)
+* [@scaramallion](https://github.com/scaramallion/)
 
