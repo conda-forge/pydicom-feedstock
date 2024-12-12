@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "pydicom" %}
 {% set version = "3.0.1" %}
 {% set sha256 = "848ae8e36f34750cf837e48ca5cdf6f7a472145724946d5f28f529279fe11f4e" %}
@@ -13,23 +14,24 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - flit-core
 
   run:
-    - python >=3.10
+    - python >={{ python_min }}
 
 test:
   imports:
     - pydicom
   requires:
     - flit-core
+    - python {{ python_min }}
 
 about:
   home: http://github.com/pydicom/pydicom
